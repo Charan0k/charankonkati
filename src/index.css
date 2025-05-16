@@ -1,0 +1,106 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 215 50% 4%;
+    --foreground: 210 40% 98%;
+
+    --card: 215 35% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 215 35% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 260 83% 70%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 215 25% 27%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 215 25% 20%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 261 83% 58%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 215 25% 27%;
+    --input: 215 25% 27%;
+    --ring: 260 83% 70%;
+
+    --radius: 0.5rem;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  body {
+    @apply bg-[#0a0d16] text-foreground font-montserrat;
+  }
+}
+
+@layer components {
+  .highlight-gradient {
+    @apply bg-gradient-to-r from-[#8A63FF] to-[#3E92CC] animate-gradient-shift bg-clip-text text-transparent bg-size-200;
+  }
+  
+  .glass-card {
+    @apply backdrop-blur-md bg-[#131629]/50 border border-[#8A63FF]/20 hover:border-[#8A63FF]/40 transition-all transform hover:-translate-y-1;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-8 text-white;
+  }
+  
+  .section-subtitle {
+    @apply text-xl font-semibold text-[#8A63FF] mb-4;
+  }
+  
+  .tech-tag {
+    @apply px-3 py-1 rounded-full text-xs bg-[#131629] text-white border border-[#8A63FF]/30 hover:border-[#8A63FF]/60 transition-colors;
+  }
+  
+  .animate-on-scroll {
+    @apply opacity-0 animate-fade-in;
+  }
+
+  .bg-size-200 {
+    background-size: 200% 200%;
+  }
+
+  .btn-gradient {
+    @apply bg-gradient-to-r from-[#8A63FF] to-[#3E92CC] hover:opacity-90 transition-all transform hover:scale-105;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-[#8A63FF]/10;
+  }
+}
+
+/* Custom utilities */
+.clip-diagonal {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
