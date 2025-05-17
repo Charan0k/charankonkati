@@ -29,8 +29,8 @@ const ContactSection = () => {
     try {
       // EmailJS configuration
       const templateParams = {
-        from_name: formData.name,
-        from_email: formData.email,
+        name: formData.name,
+        email: formData.email,
         subject: formData.subject,
         message: formData.message
       };
