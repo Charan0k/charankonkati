@@ -9,7 +9,7 @@ const AboutSection = () => {
       degree: "B.Tech in Computer Science Engineering",
       institution: "Vidya Jyothi Institute of Technology",
       period: "2022–2025",
-      grade: "CGPA: 7.97",
+      grade: "CGPA: 8.16",
       icon: School,
     },
     {
