@@ -21,7 +21,7 @@ const HeroSection = () => {
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#8A63FF] via-[#3E92CC] to-[#8A63FF] animate-gradient-shift blur-md"></div>
               
               <img 
-                src="Me.png" 
+                src="Me.jpg" 
                 alt="Charan Konkati" 
                 className="w-64 h-64 md:w-96 md:h-96 object-cover rounded-full border-4 border-[#8A63FF]/30 relative z-10 animate-float"
               />
