@@ -23,7 +23,7 @@ const HeroSection = () => {
               <img 
                 src="Me.png" 
                 alt="Charan Konkati" 
-                className="w-80 h-80 md:w-96 md:h-96 object-cover rounded-full border-4 border-[#8A63FF]/30 relative z-10 animate-float"
+                className="w-64 h-64 md:w-96 md:h-96 object-cover rounded-full border-4 border-[#8A63FF]/30 relative z-10 animate-float"
               />
             </div>
           </div>
