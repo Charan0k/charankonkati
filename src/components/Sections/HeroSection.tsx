@@ -1,5 +1,6 @@
 
 import React from 'react';
+import Typed from 'react-typed';
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 
@@ -31,9 +32,16 @@ const HeroSection = () => {
           {/* Content on right side */}
           <div className="lg:w-1/2 space-y-6 text-center lg:text-left">
             <h3 className="text-xl text-gray-300">Hello, I'm</h3>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              <span className="text-[#8A63FF]">Charan </span>
-              <span className="text-[#3E92CC]">Konkati</span>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-[#8A63FF]">
+            <Typed
+              strings={[
+                `<span style="color:#8A63FF;">Charan</span> <span style="color:#3E92CC;">Konkati</span>`
+              ]}
+              typeSpeed={100}
+              backSpeed={50}
+              loop={false}
+              smartBackspace
+            />
             </h1>
             
             <h2 className="text-2xl md:text-3xl text-gray-200">
