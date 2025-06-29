@@ -23,7 +23,7 @@ const HeroSection = () => {
               <img 
                 src="Me.jpg" 
                 alt="Charan Konkati" 
-                className="w-64 h-64 md:w-96 md:h-96 object-cover rounded-full border-4 border-[#8A63FF]/30 relative z-10 animate-float"
+                className="w-80 h-80 md:w-96 md:h-96 object-cover rounded-full border-4 border-[#8A63FF]/30 relative z-10 animate-float"
               />
             </div>
           </div>
@@ -31,16 +31,9 @@ const HeroSection = () => {
           {/* Content on right side */}
           <div className="lg:w-1/2 space-y-6 text-center lg:text-left">
             <h3 className="text-xl text-gray-300">Hello, I'm</h3>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-[#8A63FF]">
-            <Typed
-              strings={[
-                `<span style="color:#8A63FF;">Charan</span> <span style="color:#3E92CC;">Konkati</span>`
-              ]}
-              typeSpeed={100}
-              backSpeed={50}
-              loop={false}
-              smartBackspace
-            />
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              <span className="text-[#8A63FF]">Charan </span>
+              <span className="text-[#3E92CC]">Konkati</span>
             </h1>
             
             <h2 className="text-2xl md:text-3xl text-gray-200">
