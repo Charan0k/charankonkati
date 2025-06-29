@@ -55,7 +55,7 @@ const Navbar = () => {
               </a>
             ))}
             <Button className="bg-gradient-to-r from-neon-blue to-neon-purple hover:opacity-90">
-              <a href="https://drive.google.com/file/d/18z9HUoCkUokMlI74_a3sG43XAcy_S2Ul/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download Resume</a>
+              <a href="https://drive.google.com/file/d/1KF4KCLpbhCGVZobTlLSQ61pcpQWg7dCl/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download Resume</a>
             </Button>
           </nav>
           
